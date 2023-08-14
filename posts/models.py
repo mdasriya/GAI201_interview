@@ -1,9 +1,9 @@
 from django.db import models
- 
+
 class Post(models.Model):
     username = models.CharField(max_length=50)
     caption = models.TextField()
-    created_al = models.DateTimeField(auto_now_add = True)
+    created_at = models.DateTimeField(auto_now_add=True)
     likes = models.PositiveIntegerField(default=0)
 
 class Comment(models.Model):
